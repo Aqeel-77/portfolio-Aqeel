@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqeel Alshammari | Full Stack Developer</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>   
+    <header class="site-header">
+      <div class="header-wrap">
+        <a href="#home" class="logo">Aqeel<span>.</span></a>
+        <nav class="header-nav">
+          <a class="link" href="#home">Home</a>
+          <a class="link" href="#about">About</a>
+          <a class="link" href="#skills">Skills</a>
+          <a class="link" href="#projects">Projects</a>
+          <a class="link" href="#contact">Contact</a>
+          <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">Dark</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div>
+          <p class="tag">Welcome, I'm</p>
+          <h1 id="hero-name">Aqeel Alshammari</h1>
+          <h2 id="hero-title">Full Stack Developer</h2>
+          <p class="hero-content" id="hero-tagline">I build clean, responsive websites and web apps. Currently learning and growing my skills one project at a time.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-sec">See My Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about-section">
+          <div>
+            <img src="img.me.jpeg" alt="Photo of Aqeel" width="300" />
+          </div>
+          <div class="about-content">
+            <p class="about-tag">Who I am</p>
+            <h2 class="about-title">About Me</h2>
+            <p class="about-p" id="about-bio">I'm Aqeel, a beginner-to-growing web developer learning how to build things for the web using HTML, CSS, JavaScript and PHP. I love turning ideas into simple, clean interfaces and I'm always looking for new things to learn and build.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="skills-section">
+          <p class="skills-tag">What I know</p>
+          <h2 class="about-title">Skills</h2>
+          <div class="skills-grid" id="skills-grid">
+            <div class="skills-card">
+              <h3 class="skills-title">HTML</h3>
+              <p class="skills-des">Structuring web pages with clean, semantic markup.</p>
+            </div>
+            <div class="skills-card">
+              <h3 class="skills-title">CSS</h3>
+              <p class="skills-des">Styling and building responsive, good-looking layouts.</p>
+            </div>
+            <div class="skills-card">
+              <h3 class="skills-title">JavaScript</h3>
+              <p class="skills-des">Adding interactivity and logic to web pages.</p>
+            </div>
+            <div class="skills-card">
+              <h3 class="skills-title">PHP &amp; MySQL</h3>
+              <p class="skills-des">Loading dynamic content from a database.</p>
+            </div>
+            <div class="skills-card">
+              <h3 class="skills-title">Git &amp; GitHub</h3>
+              <p class="skills-des">Tracking my progress and sharing my projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="work-section">
+          <p class="skills-tag">My work</p>
+          <h2 class="about-title">Projects</h2>
+          <div class="work-grid" id="projects-grid">
+            <div class="work-card">
+              <div class="work-card-num">01</div>
+              <h3 class="work-card-title">Personal About Page</h3>
+              <p class="work-card-des">A simple bio/about page built with HTML and CSS basics.</p>
+            </div>
+            <div class="work-card">
+              <div class="work-card-num">02</div>
+              <h3 class="work-card-title">Landing Page Practice</h3>
+              <p class="work-card-des">A practice landing page focused on layout and styling.</p>
+            </div>
+            <div class="work-card">
+              <div class="work-card-num">03</div>
+              <h3 class="work-card-title">This Portfolio</h3>
+              <p class="work-card-des">A dynamic portfolio using PHP and MySQL with dark mode.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-section">
+          <p class="skills-tag">Get in touch</p>
+          <h2 class="about-title">Contact</h2>
+          <p class="contact-text">Have a question or just want to say hi? Feel free to reach out.</p>
+
+          <p id="form-alert" class="alert" hidden></p>
+
+          <form class="contact-form" action="contact.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+          <div class="contact-links">
+            <a id="email-link" href="mailto:Aqeel@gmail.com">Email Me</a>
+            <a id="github-link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 <span id="footer-name">Aqeel Alshammari</span>. Built with HTML, CSS, JavaScript &amp; PHP.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
